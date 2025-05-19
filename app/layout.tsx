@@ -6,8 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Karioka Chilena - Puntuación",
-  description: "Aplicación para anotar puntos del juego Karioka Chilena",
+  title: "Carioca Chilena - Puntuación",
+  description: "Aplicación para anotar puntos del juego Carioca Chilena",
     generator: 'v0.dev'
 }
 

@@ -31,7 +31,7 @@ interface Round {
   description: string
 }
 
-export default function KariokaScoreTracker() {
+export default function CariocaScoreTracker() {
   // Definición de las rondas del juego
   const rounds: Round[] = [
     { id: 1, name: "Ronda 1", description: "Dos tríos" },
@@ -110,7 +110,7 @@ export default function KariokaScoreTracker() {
       <Card className="mb-8">
         <CardHeader className="pb-4">
           <div className="flex justify-between items-center">
-            <CardTitle className="text-2xl">Karioka Chilena</CardTitle>
+            <CardTitle className="text-2xl">Carioca Chilena</CardTitle>
             <Dialog>
               <DialogTrigger asChild>
                 <Button variant="ghost" size="icon">
@@ -119,10 +119,10 @@ export default function KariokaScoreTracker() {
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
-                  <DialogTitle>Reglas de la Karioka Chilena</DialogTitle>
+                  <DialogTitle>Reglas de la Carioca Chilena</DialogTitle>
                   <DialogDescription>
                     <div className="mt-4 space-y-2">
-                      <p>La Karioka es un juego de cartas similar al Rummy, jugado con baraja francesa.</p>
+                      <p>La Carioca es un juego de cartas similar al Rummy, jugado con baraja francesa.</p>
                       <p>El objetivo es formar combinaciones de cartas:</p>
                       <ul className="list-disc pl-5 space-y-1">
                         <li>
