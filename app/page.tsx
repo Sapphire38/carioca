@@ -77,7 +77,7 @@ export default function CariocaScoreTracker() {
       if (player.id === playerId) {
         const newScores = [...player.scores]
         // Asegurarse de que el puntaje no sea negativo
-        newScores[roundIndex] = Math.max(0, value)
+        newScores[roundIndex] = value
         // Calcular el nuevo total
         const newTotal = newScores.reduce((sum, score) => sum + score, 0)
         return { ...player, scores: newScores, total: newTotal }
@@ -170,7 +170,6 @@ export default function CariocaScoreTracker() {
                 <div className="flex items-center gap-2">
                   <Input
                     type="number"
-                    min="0"
                     className="w-16 text-center"
                     value={player.scores[currentRound]}
                     onChange={(e) => updateScore(player.id, currentRound, Number.parseInt(e.target.value) || 0)}
